@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD Imran Chowdhury | Computer Science & Engineering Graduate</title>
+  <meta name="description" content="Personal portfolio of MD Imran Chowdhury, Computer Science & Engineering graduate passionate about software development, DevOps, networking, and cybersecurity.">
+  <meta property="og:title" content="MD Imran Chowdhury | Computer Science & Engineering Graduate">
+  <meta property="og:description" content="Personal portfolio of MD Imran Chowdhury, Computer Science & Engineering graduate passionate about software development, DevOps, networking, and cybersecurity.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Free Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER & NAVIGATION
+       ====================================================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo" id="brand-logo" aria-label="MD Imran Chowdhury Portfolio Home">
+        <div class="nav-logo-icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <span>Imran</span>.dev
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#activities" class="nav-link">Activities</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Navigation Actions (Theme Toggle & Mobile Hamburger) -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button class="hamburger-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         1. HERO SECTION
+         ====================================================================== -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <span class="badge-dot"></span>
+            <span>Available for Tech Opportunities & Roles</span>
+          </div>
+
+          <p class="hero-greeting reveal">Hello, I'm</p>
+          <h1 class="hero-name reveal">MD Imran Chowdhury</h1>
+          <h2 class="hero-degree reveal">Computer Science & Engineering Graduate</h2>
+
+          <!-- Dynamic Typing Animation Box -->
+          <div class="hero-typing-box reveal" aria-label="Specialization Focus">
+            <span>Passionate about:</span>
+            <span id="typing-text" class="typing-text">Software Development</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <!-- Professional Short Introduction -->
+          <p class="hero-intro reveal">
+            Computer Science &amp; Engineering graduate passionate about software development, DevOps, networking, cybersecurity, and practical technology solutions.
+          </p>
+
+          <!-- Call-to-Action Buttons -->
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+              <i class="fa-solid fa-code-fork"></i>
+              <span>View My Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-outline" id="hero-btn-contact">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Quick Connect Pills -->
+          <div class="hero-socials reveal">
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-pill" data-placeholder="true" data-action-name="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="social-pill" data-placeholder="true" data-action-name="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:your-email@example.com" class="social-pill" data-placeholder="true" data-action-name="Email">
+              <i class="fa-regular fa-envelope"></i>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Developer Code Terminal (No fake human photos) -->
+        <div class="hero-visual reveal">
+          <div class="terminal-card" id="developer-terminal" role="region" aria-label="Developer Information Card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <span class="terminal-title">imran_developer.ts</span>
+              <span class="terminal-badge">CSE Grad</span>
+            </div>
+
+            <div class="terminal-body">
+              <span class="code-line"><span class="code-kw">const</span> <span class="code-var">developer</span> = {</span>
+              <span class="code-line code-indent"><span class="code-prop">name</span>: <span class="code-str">"MD Imran Chowdhury"</span>,</span>
+              <span class="code-line code-indent"><span class="code-prop">degree</span>: <span class="code-str">"B.Sc. in Computer Science & Engineering"</span>,</span>
+              <span class="code-line code-indent"><span class="code-prop">university</span>: <span class="code-str">"BGC Trust University Bangladesh"</span>,</span>
+              <span class="code-line code-indent"><span class="code-prop">interests</span>: [</span>
+              <span class="code-line code-indent-2"><span class="code-str">"Software Development"</span>,</span>
+              <span class="code-line code-indent-2"><span class="code-str">"DevOps & DevSecOps"</span>,</span>
+              <span class="code-line code-indent-2"><span class="code-str">"Networking & Cloud"</span>,</span>
+              <span class="code-line code-indent-2"><span class="code-str">"Cybersecurity"</span>,</span>
+              <span class="code-line code-indent-2"><span class="code-str">"IoT & Industrial Tech"</span></span>
+              <span class="code-line code-indent">],</span>
+              <span class="code-line code-indent"><span class="code-prop">openForWork</span>: <span class="code-bool">true</span>,</span>
+              <span class="code-line code-indent"><span class="code-prop">continuousLearner</span>: <span class="code-bool">true</span></span>
+              <span class="code-line">};</span>
+
+              <div class="terminal-footer-status">
+                <div class="status-indicator">
+                  <i class="fa-solid fa-circle" style="font-size: 8px;"></i>
+                  <span>Ready for entry-level tech roles</span>
+                </div>
+                <span>UTF-8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. ABOUT SECTION
+         ====================================================================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-regular fa-user"></i> Profile</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">A balanced overview of my academic background, technical curiosities, and work approach.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Content -->
+          <div class="about-text-card reveal">
+            <p class="about-paragraph">
+              I am a Computer Science &amp; Engineering graduate from BGC Trust University Bangladesh with a keen enthusiasm for building reliable software, exploring system operations, and creating practical technology solutions.
+            </p>
+            <p class="about-paragraph">
+              Throughout my academic journey, I have cultivated strong fundamentals in programming, system architecture, and modern engineering practices. Rather than claiming premature expertise, I focus on curiosity, discipline, and building a solid technical foundation. My core areas of interest include:
+            </p>
+
+            <div class="about-interests-list">
+              <div class="about-interest-item">
+                <i class="fa-solid fa-check"></i>
+                <span>Software development</span>
+              </div>
+              <div class="about-interest-item">
+                <i class="fa-solid fa-check"></i>
+                <span>DevOps / DevSecOps</span>
+              </div>
+              <div class="about-interest-item">
+                <i class="fa-solid fa-check"></i>
+                <span>Networking and cloud technologies</span>
+              </div>
+              <div class="about-interest-item">
+                <i class="fa-solid fa-check"></i>
+                <span>Cybersecurity</span>
+              </div>
+              <div class="about-interest-item">
+                <i class="fa-solid fa-check"></i>
+                <span>IoT and industrial technology</span>
+              </div>
+              <div class="about-interest-item">
+                <i class="fa-solid fa-check"></i>
+                <span>Data and automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic & Mindset Highlights -->
+          <div class="about-highlights-grid">
+            <div class="highlight-card reveal reveal-delay-1">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="highlight-info">
+                <h3>CSE Graduate</h3>
+                <p>Equipped with formal training in core computer science principles, algorithms, and practical software engineering.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card reveal reveal-delay-2">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <div class="highlight-info">
+                <h3>Hands-On Problem Solving</h3>
+                <p>Committed to applying technology toward practical, real-world problems—from offline diagnostics to IoT safety.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card reveal reveal-delay-3">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div class="highlight-info">
+                <h3>Collaborative Leadership</h3>
+                <p>Experienced in team coordination and community building through active roles in university IT club and BASIS student forum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. SKILLS SECTION
+         ====================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Capabilities</span>
+          <h2 class="section-title">Skills &amp; Competencies</h2>
+          <p class="section-subtitle">Categorized skills gained through academic coursework, self-driven learning, and project development.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Programming & Web -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="category-title">Programming &amp; Web</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span>CSS</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-php"></i>
+                <span>PHP</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-laravel"></i>
+                <span>Laravel</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-file-code"></i>
+                <span>TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Tools & Documentation -->
+          <div class="skill-category-card reveal reveal-delay-1">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fa-solid fa-toolbox"></i>
+              </div>
+              <h3 class="category-title">Tools &amp; Documentation</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <i class="fa-brands fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-square-root-variable"></i>
+                <span>LaTeX</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-microsoft"></i>
+                <span>Microsoft Office</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-image"></i>
+                <span>Adobe Photoshop</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-palette"></i>
+                <span>Canva</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Technology Interests -->
+          <div class="skill-category-card reveal reveal-delay-2">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <h3 class="category-title">Technology Interests</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <i class="fa-solid fa-infinity"></i>
+                <span>DevOps</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>DevSecOps</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-network-wired"></i>
+                <span>Networking</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-cloud"></i>
+                <span>Cloud Computing</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-lock"></i>
+                <span>Cybersecurity</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-tower-broadcast"></i>
+                <span>IoT</span>
+              </div>
+              <div class="skill-item" style="grid-column: span 2;">
+                <i class="fa-solid fa-industry"></i>
+                <span>Industrial Networking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. CAREER INTERESTS SECTION
+         ====================================================================== -->
+    <section class="section section-alt" id="career-interests">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-compass"></i> Focus Areas</span>
+          <h2 class="section-title">Career Interests</h2>
+          <p class="section-subtitle">Key technology domains where I aim to invest my effort, build deep expertise, and create real impact.</p>
+        </div>
+
+        <div class="career-interests-grid">
+          <!-- 1. Software Development -->
+          <div class="career-card reveal">
+            <div class="career-icon-box">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="career-details">
+              <h3>Software Development</h3>
+              <p>Designing and constructing maintainable applications, clean backend services, RESTful APIs, and user-centric web tools.</p>
+            </div>
+          </div>
+
+          <!-- 2. DevOps / DevSecOps -->
+          <div class="career-card reveal">
+            <div class="career-icon-box">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <div class="career-details">
+              <h3>DevOps / DevSecOps</h3>
+              <p>Exploring automated build pipelines, containerized environments, infrastructure reliability, and security practices throughout the delivery lifecycle.</p>
+            </div>
+          </div>
+
+          <!-- 3. Cloud & Networking -->
+          <div class="career-card reveal">
+            <div class="career-icon-box">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+            </div>
+            <div class="career-details">
+              <h3>Cloud &amp; Networking</h3>
+              <p>Understanding network architectures, routing and switching fundamentals, cloud hosting principles, and server configurations.</p>
+            </div>
+          </div>
+
+          <!-- 4. Cybersecurity -->
+          <div class="career-card reveal">
+            <div class="career-icon-box">
+              <i class="fa-solid fa-shield-virus"></i>
+            </div>
+            <div class="career-details">
+              <h3>Cybersecurity</h3>
+              <p>Studying system hardening, threat mitigation, defensive networking strategies, secure coding standards, and vulnerability identification.</p>
+            </div>
+          </div>
+
+          <!-- 5. Industrial Networking / ICS -->
+          <div class="career-card reveal">
+            <div class="career-icon-box">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <div class="career-details">
+              <h3>Industrial Networking / ICS</h3>
+              <p>Investigating communication protocols for operational systems, industrial safety telemetry, and interconnected plant environments.</p>
+            </div>
+          </div>
+
+          <!-- 6. IoT -->
+          <div class="career-card reveal">
+            <div class="career-icon-box">
+              <i class="fa-solid fa-satellite-dish"></i>
+            </div>
+            <div class="career-details">
+              <h3>IoT (Internet of Things)</h3>
+              <p>Integrating sensors, microcontrollers, and wireless communications to monitor environments and trigger automated responses.</p>
+            </div>
+          </div>
+
+          <!-- 7. Data Migration & Automation -->
+          <div class="career-card reveal">
+            <div class="career-icon-box">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="career-details">
+              <h3>Data Migration &amp; Automation</h3>
+              <p>Implementing reliable data transfers, routine workflow automation scripts, and eliminating repetitive operational tasks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. PROJECTS SECTION
+         ====================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Practical academic and idea projects developed to solve targeted problems using modern techniques.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal" id="project-offline-diagnostic">
+            <div class="project-header">
+              <span class="project-category-badge">
+                <i class="fa-solid fa-terminal"></i> Diagnostic &amp; NLP
+              </span>
+              <h3 class="project-title">Offline Screenshot-Based Diagnostic Assistant</h3>
+            </div>
+            <p class="project-description">
+              A privacy-focused diagnostic assistant designed to help beginner Linux and Windows users identify common system errors using screenshots, OCR, text processing, and similarity-based error retrieval.
+            </p>
+            <div class="project-tech-stack">
+              <div class="tech-tags-list">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">Tesseract OCR</span>
+                <span class="tech-tag">TF-IDF</span>
+                <span class="tech-tag">Cosine Similarity</span>
+                <span class="tech-tag">Streamlit</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="#projects" class="btn btn-outline btn-sm" data-placeholder="true" data-action-name="Offline Diagnostic Assistant GitHub Repo">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+                <span class="placeholder-badge">Placeholder</span>
+              </a>
+              <a href="#projects" class="btn btn-primary btn-sm" data-placeholder="true" data-action-name="Offline Diagnostic Assistant Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Demo</span>
+                <span class="placeholder-badge">Placeholder</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal reveal-delay-1" id="project-iiot-gas-safety">
+            <div class="project-header">
+              <span class="project-category-badge">
+                <i class="fa-solid fa-fire-flame-curved"></i> Industrial IoT
+              </span>
+              <h3 class="project-title">IIoT-Based Gas Safety Engineering System</h3>
+            </div>
+            <p class="project-description">
+              An IoT/industrial technology project focused on improving gas safety through monitoring and automated detection concepts.
+            </p>
+            <div class="project-tech-stack">
+              <div class="tech-tags-list">
+                <span class="tech-tag">IoT</span>
+                <span class="tech-tag">Sensors</span>
+                <span class="tech-tag">Embedded Systems</span>
+                <span class="tech-tag">Industrial Safety</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="#projects" class="btn btn-outline btn-sm" data-placeholder="true" data-action-name="IIoT Gas Safety GitHub Repo">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+                <span class="placeholder-badge">Placeholder</span>
+              </a>
+              <a href="#projects" class="btn btn-primary btn-sm" data-placeholder="true" data-action-name="IIoT Gas Safety Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Demo</span>
+                <span class="placeholder-badge">Placeholder</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal" id="project-eco-bloom">
+            <div class="project-header">
+              <span class="project-category-badge">
+                <i class="fa-solid fa-leaf"></i> Sustainability
+              </span>
+              <h3 class="project-title">Eco Bloom</h3>
+            </div>
+            <p class="project-description">
+              An eco-friendly project focused on producing paper from recycled waste materials.
+            </p>
+            <div class="project-tech-stack">
+              <div class="tech-tags-list">
+                <span class="tech-tag">Recycling</span>
+                <span class="tech-tag">Sustainable Materials</span>
+                <span class="tech-tag">Environmental Technology</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="#projects" class="btn btn-outline btn-sm" data-placeholder="true" data-action-name="Eco Bloom GitHub Repo">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+                <span class="placeholder-badge">Placeholder</span>
+              </a>
+              <a href="#projects" class="btn btn-primary btn-sm" data-placeholder="true" data-action-name="Eco Bloom Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Demo</span>
+                <span class="placeholder-badge">Placeholder</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal reveal-delay-1" id="project-smart-bus">
+            <div class="project-header">
+              <span class="project-category-badge">
+                <i class="fa-solid fa-bus"></i> Smart Transit &amp; Hackathon
+              </span>
+              <h3 class="project-title">Smart Bus System</h3>
+            </div>
+            <p class="project-description">
+              An idea-based project developed for a university idea-project/hackathon, focusing on improving public transportation through smart technology.
+            </p>
+            <div class="project-tech-stack">
+              <div class="tech-tags-list">
+                <span class="tech-tag">Smart Transit</span>
+                <span class="tech-tag">IoT Concepts</span>
+                <span class="tech-tag">Urban Mobility</span>
+                <span class="tech-tag">System Design</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="#projects" class="btn btn-outline btn-sm" data-placeholder="true" data-action-name="Smart Bus System GitHub Repo">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+                <span class="placeholder-badge">Placeholder</span>
+              </a>
+              <a href="#projects" class="btn btn-primary btn-sm" data-placeholder="true" data-action-name="Smart Bus System Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Demo</span>
+                <span class="placeholder-badge">Placeholder</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project Links Notice -->
+        <div class="projects-note reveal">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>GitHub repository and live demo links are marked as placeholders and can be replaced with actual project links.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. EXPERIENCE & EDUCATION (DUAL SECTION)
+         ====================================================================== -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="dual-section-grid">
+          <!-- Experience Column -->
+          <div class="experience-column">
+            <div class="section-header" style="text-align: left; margin-bottom: 32px;">
+              <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Background</span>
+              <h2 class="section-title">Practical Experience</h2>
+              <p class="section-subtitle">Real-world operational activities and responsibilities.</p>
+            </div>
+
+            <div class="experience-card reveal" id="experience-family-business">
+              <div class="card-top-meta">
+                <span class="role-badge"><i class="fa-solid fa-store"></i> Practical Activity</span>
+                <span class="period-badge">2018 — Present</span>
+              </div>
+
+              <h3 class="card-main-title">Part-time Shop Assistance — Family Business</h3>
+              <h4 class="card-org-name">
+                <i class="fa-solid fa-building-circle-check"></i>
+                <span>Father's Medicine Shop</span>
+              </h4>
+
+              <p class="card-body-text">
+                Since 2018, I have assisted with day-to-day activities at my father's medicine shop, including customer dealing, routine shop activities, and assigned responsibilities.
+              </p>
+
+              <div class="responsibilities-list">
+                <div class="responsibility-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Direct customer interaction, understanding requirements, and providing prompt service.</span>
+                </div>
+                <div class="responsibility-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Assisting in stock tracking, product organization, and daily routine shop operations.</span>
+                </div>
+                <div class="responsibility-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Fostered personal reliability, time discipline, and strong communication skills.</span>
+                </div>
+              </div>
+
+              <div class="honest-notice-box">
+                <i class="fa-solid fa-circle-info"></i>
+                <strong>Note:</strong> Presented transparently as practical family business experience and daily operational practice, not as formal corporate employment.
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Column -->
+          <div class="education-column" id="education">
+            <div class="section-header" style="text-align: left; margin-bottom: 32px;">
+              <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academics</span>
+              <h2 class="section-title">Education</h2>
+              <p class="section-subtitle">Formal university degree and foundational knowledge.</p>
+            </div>
+
+            <div class="education-card reveal" id="education-card-bgc">
+              <div class="card-top-meta">
+                <span class="role-badge"><i class="fa-solid fa-certificate"></i> Undergraduate Degree</span>
+                <span class="period-badge">CSE Graduate</span>
+              </div>
+
+              <h3 class="card-main-title">Bachelor's Degree in Computer Science &amp; Engineering</h3>
+              <h4 class="card-org-name">
+                <i class="fa-solid fa-landmark"></i>
+                <span>BGC Trust University Bangladesh</span>
+              </h4>
+
+              <p class="card-body-text">
+                Completed the comprehensive curriculum in Computer Science and Engineering, covering both theoretical principles and practical software system design.
+              </p>
+
+              <div class="responsibilities-list">
+                <div class="responsibility-item">
+                  <i class="fa-solid fa-book-bookmark"></i>
+                  <span>Core Foundations: Algorithms, Data Structures, Object-Oriented Programming, and Database Systems.</span>
+                </div>
+                <div class="responsibility-item">
+                  <i class="fa-solid fa-book-bookmark"></i>
+                  <span>Systems &amp; Networks: Operating Systems, Computer Networks, and System Architecture fundamentals.</span>
+                </div>
+                <div class="responsibility-item">
+                  <i class="fa-solid fa-book-bookmark"></i>
+                  <span>Practical Engineering: Software Engineering principles, project design, and technical collaboration.</span>
+                </div>
+              </div>
+
+              <div class="honest-notice-box">
+                <i class="fa-solid fa-shield-heart"></i>
+                <strong>Grounded Integrity:</strong> All educational credentials reflect exact verified information without exaggerated dates or fabricated honors.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. LEADERSHIP & ACTIVITIES SECTION
+         ====================================================================== -->
+    <section class="section" id="activities">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-people-group"></i> Extracurriculars</span>
+          <h2 class="section-title">Leadership &amp; Activities</h2>
+          <p class="section-subtitle">Active community involvement, tech club administration, and hackathon participation.</p>
+        </div>
+
+        <div class="activities-grid">
+          <!-- Activity 1: IT Club President -->
+          <div class="activity-card reveal">
+            <div class="activity-icon-wrap">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div class="activity-content">
+              <h3 class="activity-role">President</h3>
+              <h4 class="activity-org">BGC Trust University IT Club</h4>
+              <p class="activity-desc">
+                Leading the university IT club initiatives, coordinating tech workshops, organizing seminars, guiding fellow students, and cultivating an active peer-to-peer learning environment.
+              </p>
+            </div>
+          </div>
+
+          <!-- Activity 2: BASIS Student Forum Co-Convenor -->
+          <div class="activity-card reveal reveal-delay-1">
+            <div class="activity-icon-wrap">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <div class="activity-content">
+              <h3 class="activity-role">Co-Convenor</h3>
+              <h4 class="activity-org">BASIS Student Forum</h4>
+              <p class="activity-desc">
+                Serving as student chapter co-convenor with the national software industry association forum, facilitating student engagement, technical seminars, and industry awareness sessions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Activity 3: GenU Climate Hackathon -->
+          <div class="activity-card reveal">
+            <div class="activity-icon-wrap">
+              <i class="fa-solid fa-earth-americas"></i>
+            </div>
+            <div class="activity-content">
+              <h3 class="activity-role">Challenge Participant</h3>
+              <h4 class="activity-org">GenU imaGen Ventures Youth Challenge 2024-25 Climate Hackathon</h4>
+              <p class="activity-desc">
+                Participated in the competitive youth innovation challenge focused on formulating technology and sustainability concepts to combat urgent climate challenges.
+              </p>
+            </div>
+          </div>
+
+          <!-- Activity 4: University Hackathons -->
+          <div class="activity-card reveal reveal-delay-1">
+            <div class="activity-icon-wrap">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="activity-content">
+              <h3 class="activity-role">Hackathon &amp; Idea Project Competitor</h3>
+              <h4 class="activity-org">University Idea-Project / Hackathon Participation</h4>
+              <p class="activity-desc">
+                Engaged in inter-university and campus project competitions (including the Smart Bus System concept), pitching solutions, prototyping concepts, and collaborating under time constraints.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. CONTACT SECTION
+         ====================================================================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-regular fa-envelope"></i> Communication</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in discussing entry-level opportunities, internships, or technology collaboration? I would be delighted to hear from you.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details Column -->
+          <div class="contact-info-panel reveal">
+            <p class="contact-intro">
+              Whether you have questions about my academic projects, an internship opening, or want to discuss DevOps, networking, or software development, feel free to drop a message.
+            </p>
+
+            <div class="contact-cards-list">
+              <!-- Email Item -->
+              <div class="contact-item-card">
+                <div class="contact-icon-box">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="contact-item-details">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:your-email@example.com" class="contact-val" data-placeholder="true" data-action-name="Email Link">your-email@example.com</a>
+                </div>
+              </div>
+
+              <!-- Phone Item -->
+              <div class="contact-item-card">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-item-details">
+                  <span class="contact-label">Phone</span>
+                  <span class="contact-val">+880 1XXXXXXXXX (Placeholder)</span>
+                </div>
+              </div>
+
+              <!-- LinkedIn Item -->
+              <div class="contact-item-card">
+                <div class="contact-icon-box">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="contact-item-details">
+                  <span class="contact-label">LinkedIn</span>
+                  <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="contact-val" data-placeholder="true" data-action-name="LinkedIn URL">linkedin.com/in/yourusername</a>
+                </div>
+              </div>
+
+              <!-- GitHub Item -->
+              <div class="contact-item-card">
+                <div class="contact-icon-box">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="contact-item-details">
+                  <span class="contact-label">GitHub</span>
+                  <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="contact-val" data-placeholder="true" data-action-name="GitHub URL">github.com/yourusername</a>
+                </div>
+              </div>
+
+              <!-- Location Item -->
+              <div class="contact-item-card">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-item-details">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-val">Chattogram, Bangladesh</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-card reveal">
+            <!-- Status message container for form submission feedback -->
+            <div id="form-status" class="form-status" role="alert"></div>
+
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name <span>*</span></label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Sarah Connor" required>
+                <div class="form-error-text" id="name-error"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span>*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. sarah@example.com" required>
+                <div class="form-error-text" id="email-error"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject <span>*</span></label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Entry-Level Opportunity / Project Discussion" required>
+                <div class="form-error-text" id="subject-error"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message <span>*</span></label>
+                <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Write your message here..." required></textarea>
+                <div class="form-error-text" id="message-error"></div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="btn-submit-message" style="width: 100%;">
+                <i class="fa-regular fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+
+              <div class="form-disclaimer">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Note: This form features client-side JavaScript validation. Since this portfolio operates statically without a backend, please email directly for critical inquiries.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-branding">
+          <h2>MD Imran Chowdhury</h2>
+          <p>"Building skills, exploring technology, and creating practical solutions."</p>
+        </div>
+
+        <div class="footer-social-links" aria-label="Social Profiles">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="GitHub Profile" data-placeholder="true" data-action-name="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn Profile" data-placeholder="true" data-action-name="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:your-email@example.com" class="footer-social-btn" aria-label="Email Me" data-placeholder="true" data-action-name="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> MD Imran Chowdhury. All rights reserved.</p>
+        <p>Built with semantic HTML5, CSS3, and Vanilla JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Vanilla JavaScript Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
